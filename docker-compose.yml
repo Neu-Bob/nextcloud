@@ -4,8 +4,8 @@ services:
     image: lscr.io/linuxserver/nextcloud:latest
     container_name: nextcloud
     environment:
-      - PUID=1000
-      - PGID=1000
+      - PUID=1026
+      - PGID=100
       - TZ=America/New_York
     volumes:
       - /NASshare/nextcloud/config:/config
