@@ -8,8 +8,9 @@ services:
       - PGID=1000
       - TZ=Europe/London
     volumes:
-      - /path/to/appdata:/config
-      - /path/to/data:/data
+      - /NASshare/nextcloud/config:/config
+      - /NASshare/nextcloud/:/data
     ports:
+      - 80:80
       - 443:443
     restart: unless-stopped
