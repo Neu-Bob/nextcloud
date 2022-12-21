@@ -11,6 +11,6 @@ services:
       - /NASshare/nextcloud/config:/config
       - /NASshare/nextcloud/:/data
     ports:
-      - 80:80
-      - 443:443
+      - 8071:80
+      - 445:443
     restart: unless-stopped
