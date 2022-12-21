@@ -18,9 +18,9 @@ services:
     restart: always
     volumes:
       - nextcloud-data:/var/www/html
-    ports: 
-      - "85:80"
-      - "448:443"
+    # ports: 
+    #   - "85:80"
+    #   - "448:443"
     environment:
       - MYSQL_PASSWORD=notSecurePassword
       - MYSQL_DATABASE=nextcloud
